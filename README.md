@@ -261,7 +261,7 @@ Studien har låg power vid små skillnader, men hög
 power vid större skillnader.
 
 
-## Sammanfattning
+## Sammanfattning och rekommendationer
 
 - Inget tillräckligt statistiskt stöd för högre medelblodtryck bland rökare.
 - Högre observerad sjukdomsandel bland rökare, men resultatet är explorativt och kan påverkas av andra faktorer.
