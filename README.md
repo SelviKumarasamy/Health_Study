@@ -5,6 +5,7 @@ Undersöka hälsodata med beskrivande statistik, EDA, simulering, konfidensinter
 
 ## Projektstruktur
 
+```text
 Health_Study/
 ├── data/                         
 ├── images/                       
@@ -22,6 +23,8 @@ Health_Study/
 ├── .gitignore
 ├── README.md
 └── requirements.txt
+
+```
 
 ## Datamaterial och kvalitet
 - **800 deltagare**, 9 ursprungliga kolumner.
@@ -242,11 +245,11 @@ bland rökare varierar.
 
 | Andel bland rökare | Skillnad | Power |
 |---|---:|---:|
-| 4,8 % | 0,00 pp | 4,9 % |
-| 6,0 % | 1,23 pp | 17,6 % |
-| 8,9 % | 4,15 pp | 69,0 % |
-| 12,0 % | 7,23 pp | 95,6 % |
-| 15,0 % | 10,23 pp | 99,8 % |
+| 4,8 % | 0,00 pp | 5,5 % |
+| 6,0 % | 1,23 pp | 17,8 % |
+| 8,9 % | 4,15 pp | 67,9 % |
+| 12,0 % | 7,23 pp | 96,4 % |
+| 15,0 % | 10,23 pp | 99,7 % |
 
 *pp = procentenheter.*
 

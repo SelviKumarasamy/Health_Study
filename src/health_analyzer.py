@@ -9,9 +9,12 @@ class HealthAnalyzer:
     """Samlar dataset och återanvändbara analysmetoder."""
     
     def __init__(self,path):
+        """Läser in hälsodata och beräknar BMI."""
         self.df=add_bmi(load_data(path))
 
-    def quality(self):return validate_data(self.df)
+    def quality(self):
+        """Kontrollerar datasetets kvalitet."""
+        return validate_data(self.df)
 
     def describe(self):
         """Visar beskrivande statistik för numeriska hälsovariabler."""
@@ -30,6 +33,7 @@ class HealthAnalyzer:
         return disease_by_smoking(self.df)
 
     def bp_confidence_intervals(self,B=2000,seed=42):
+        """Beräknar konfidensintervall med normalapproximation och bootstrap."""
         bp=self.df['systolic_bp'].dropna()
         return ci_mean_normal(bp),ci_mean_bootstrap(bp,B=B,seed=seed)
     

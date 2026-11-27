@@ -12,13 +12,13 @@ def simulate_disease(df,n=1000,seed=42):
     # Beräkna den verkliga sjukdomsandelen
     disease_percent = df["disease"].mean()
 
-    np.random.seed(42)
+    np.random.seed(seed)
 
     # Simulera 1000 personer med samma sjukdomssannolikhet
     simulation = np.random.binomial(
         n=1,
         p=disease_percent,
-        size=1000
+        size=n
     )
  
     # Beräkna den simulerade sjukdomsandelen
